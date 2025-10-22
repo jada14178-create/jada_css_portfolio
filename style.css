@@ -1,0 +1,144 @@
+/* ====== Global Styles ====== */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ====== Header ====== */
+header {
+  background-color: #ffcce0;
+  color: #fff;
+  text-align: center;
+  padding: 2.5rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  margin: 0;
+  color: #ff7ba3;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* ====== Navigation ====== */
+nav {
+  background-color: #ffe6ef;
+  text-align: center;
+  padding: 1rem 0;
+  border-bottom: 2px solid #ffb6c9;
+}
+
+nav a {
+  color: #ff4f86;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 600;
+  transition: color 0.3s ease, background 0.3s ease;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background-color: #ffd9e4;
+  color: #d6336c;
+}
+
+/* ====== Main Section ====== */
+section {
+  max-width: 850px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section h1 {
+  color: #ff6f9c;
+  border-bottom: 2px solid #ffb6c9;
+  padding-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+article {
+  background-color: #fff;
+  padding: 1.2rem;
+  margin-top: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(255, 175, 200, 0.3);
+}
+
+article h1 {
+  font-size: 1.4rem;
+  color: #ff4f86;
+  margin-top: 0;
+}
+
+/* ====== Sidebar ====== */
+aside {
+  background-color: #ffeef5;
+  padding: 1.2rem;
+  max-width: 300px;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(255, 175, 200, 0.2);
+  text-align: center;
+}
+
+aside h4 {
+  margin-top: 0;
+  color: #ff4f86;
+  font-weight: 600;
+  border-bottom: 1px solid #ffb6c9;
+  padding-bottom: 0.5rem;
+}
+
+/* ====== Footer ====== */
+footer {
+  background-color: #ffccda;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.95rem;
+  margin-top: 3rem;
+  letter-spacing: 0.5px;
+}
+
+/* ====== Responsive Design ====== */
+@media (min-width: 900px) {
+  body {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "section aside"
+      "footer footer";
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  nav {
+    grid-area: nav;
+  }
+
+  section {
+    grid-area: section;
+  }
+
+  aside {
+    grid-area: aside;
+    align-self: start;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+}
+
